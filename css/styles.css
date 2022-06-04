@@ -28,6 +28,27 @@ body {
   color: var(--primary-text-color);
 }
 
+/*global reset*/
+h1, h2, h3, p {
+  margin: 0;
+}
+
+ul, ol {
+  list0style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ===================== COMPONENTS ==================*/
 
 .description {
@@ -38,6 +59,9 @@ body {
 
 /* set one color to headers h2 */
 .section-title {
+  margin-bottom: 50px; 
+
+
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -49,6 +73,10 @@ body {
 /* =================== HEADER ======================== */
 
 .logo-link {
+  margin-top: 24px;
+  margin-bottom: 25px;
+
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -59,6 +87,30 @@ body {
 
 .logo-accent {
   color: var(--accent-color);
+}
+
+.containar {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-header {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.nav {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li {
+  outline: 1px solid red;
 }
 
 /* navigation menu */
@@ -102,12 +154,11 @@ body {
 /* ======================== HERO ==================== */
 .hero {
   background-color: var(--secondary-background-color);
+  text-align: center;
 }
 
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
-
 
   font-weight: 900;
   font-size: 44px;
@@ -124,10 +175,8 @@ body {
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
-  text-align: center;
+  /*text-align: center;*/
   
-  
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -135,8 +184,6 @@ body {
   background-color: var(--accent-color);
   color: var(--main-text-color);
   cursor: pointer;
-  
-
 }
 
 /* Added styles to the button on focus, on hover */
@@ -177,7 +224,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-
 /* ====================== END TEAM ==============  */
 
 /* ================= FOOTER =================== */
@@ -224,8 +270,8 @@ body {
 .contact-footer .map-link:focus {
   color: var(--accent-color);
 }
-
 /* ================ END FOOTER ============== */
+
 /* ================ PORTFOLIO ==================== */
 .portfolio-item .subtitle {
   font-weight: normal;
@@ -234,7 +280,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
 .portfolio-item .title {
   font-size: 18px;
   line-height: 2;
